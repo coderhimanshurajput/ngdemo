@@ -22,7 +22,11 @@ import { Route } from '@angular/compiler/src/core';
 const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'about', component: AboutComponent },
-  {path: 'technology', component: TechnologyComponent},
+  {path: 'technology', component: TechnologyComponent ,
+  children: [
+    {path: 'php', component: PhpComponent },
+    {path: 'java', component: JavaComponent}
+    ]},
   {path: 'contact', component: ContactComponent},
 ];
 
