@@ -10,6 +10,7 @@ import {JavaComponent} from './java/java.component';
 import {NodejsComponent} from './nodejs/nodejs.component';
 
 const routes: Routes = [
-  { path: 'technology', loadChildren: 'src/app/technology/technology.module' },
-  { path: 'technology/', component: PhpComponent }
-]
+ 
+  { path: 'technology/php', component: PhpComponent },
+  {path: 'technology/java', component: JavaComponent},
+];
